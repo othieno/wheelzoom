@@ -8,7 +8,11 @@
 	<img class='zoom' src='daisy.jpg' alt='Daisy!' width='555' height='320'/>
 	<script src="wheelzoom.js"></script>
 	<script>
-		wheelzoom(document.querySelector('img.zoom'));
+		var daisy = document.querySelector('img.zoom');
+		wheelzoom(daisy);
+		daisy.addEventListener('scroll', function(e){
+			console.log("Zoomed in/out");
+		});
 	</script>
 </body>
 </html>
