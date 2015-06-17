@@ -4,9 +4,9 @@
  *
  * Author: Jeremy Othieno.
  */
-"use strict"
+; window.wheelzoom = (function(){
+	"use strict";
 
-window.wheelzoom = (function(){
 	var defaults = {
 		zoom: 0.10
 	};
